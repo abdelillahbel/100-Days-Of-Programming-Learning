@@ -14,13 +14,13 @@ async function shouldCreateCommit(probability) {
 async function createCommits() {
     const remote = 'origin'; // Change this to match your remote name
     const branch = 'main'; // Change this to your desired branch
-    const startYear = 2023; // Start year
-    const endYear = 2023;   // End year
-    const months = Array.from({ length: 9 }, (_, i) => i + 4); // Months 1-12
+    const startYear = 2021; // Start year
+    const endYear = 2021;   // End year
+    const months = Array.from({ length: 12 }, (_, i) => i + 1); // Months 1-12
     const days = Array.from({ length: 31 }, (_, i) => i + 1); // Days 1-31
-    const minCommitsPerDay = 4; // Minimum number of commits per day
-    const maxCommitsPerDay = 13; // Maximum number of commits per day
-    const skipProbability = 0.5; // Probability of skipping a day (adjust as needed)
+    const minCommitsPerDay = 13; // Minimum number of commits per day
+    const maxCommitsPerDay = 19; // Maximum number of commits per day
+    const skipProbability = 0.9; // Probability of skipping a day (adjust as needed)
     let fileName = 'file.txt'; // Use the same file for all commits
     const commits = [];
 
